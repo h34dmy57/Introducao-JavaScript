@@ -7,18 +7,35 @@
 </head>
 <body>
     <script>
+        
+        //Retorne o seguinte conteúdo:
         function mostraEndereco() {
             console.log("O usuário mora em " + endereco.cidade + " / " + endereco.uf + ", no bairro " +
                         endereco.bairro + ", na rua " + endereco.rua + "com nº " + endereco.numero + ".");
         }
-        var endereco = {
+
+        //Crie uma função que dado o objeto a seguir:        var endereco = {
             rua: "Rua dos pinheiros",
             numero: 1293,
             bairro: "Centro",
             cidade: "São Paulo",
             uf: "SP"
         };
-        mostraEndereco();
+
+        //Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:        function pares(x, y) {
+            if (x % 2 == 0) {
+                console.log(x);
+            }
+            if (y % 2 == 0) {
+                console.log(y);
+            } else {
+                console.log("Não é par");
+            }
+        }
+            mostraEndereco();
+            pares(1, 2);
+
+
 
 
     </script>
